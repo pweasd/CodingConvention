@@ -192,6 +192,33 @@ Mixin은 코드를 DRY("Don't Repeat Yourself")하게 하고 명료하게 하며
 
 
 
+**예시**
+
+```vue
+<style lang="scss" scoped>
+@mixin btn-gray($wid: 100%, $hei: 100%) {
+  width: $wid;
+  height: $hei;
+  background-color: #888888;
+  box-sizing: border-box;
+  &:hover {
+    background-color: #dddddd;
+  }
+  &:active {
+    background-color: #bbbbbb;
+  }
+}
+    
+.button {
+  @include(100px, 100px)
+}
+</style>
+```
+
+
+
+
+
 #### 2. 중첩 선택자-Nested selectors
 
 -----
