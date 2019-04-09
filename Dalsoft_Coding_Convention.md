@@ -274,7 +274,10 @@ Vue 기본 스크립트 구조
         filters: {
             
         },
-
+        // Life Cycle Hook
+        created() {
+            
+        },
         props: {
             
         },
@@ -287,10 +290,6 @@ Vue 기본 스크립트 구조
             
         },
         watch: {
-            
-        },
-        // Life Cycle Hook
-        created() {
             
         },
         methods: {
